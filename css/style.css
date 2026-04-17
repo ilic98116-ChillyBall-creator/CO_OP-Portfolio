@@ -1,1 +1,463 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Page Requirement */
+.page {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* navigation bar design; add pixel design and animation later*/
+nav {
+  background: #0814C9;
+  padding: 15px;
+}
+
+nav a {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: white;
+  margin-right: 150px;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Pixelify Sans", sans-serif;
+  line-height: 1.1;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin: 0 0 15px 0;
+}
+
+/* Buisness card image / hero image goes at the top of every page for now */
+.Business_Card1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.Business_Card1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 60px;
+  animation: heroFadeUp 0.8s ease;
+}
+
+/* This is where I used chat gpt to teach me how to do an animation; for user experiance I wanted the viewer to know they'er on a different page when they click the nav bar so instead of importing 5 different hero cards I simply added the animation using chat-gpt */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* This is where the use of chat-gpt ends */
+
+/* Home page  */
+.portfolio_pic img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.about-section {
+  margin-bottom: 80px;
+}
+
+.about-card {
+  background: #A46D2F;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  width: 58%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-text {
+  width: 42%;
+  padding: 60px 40px 30px 40px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.about-text h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+/* Home Page second page with tool kit under the jumpscare profile pic */
+.toolkit-bar {
+  background: #A46D2F;
+  padding: 30px;
+  border-radius: 40px;
+}
+
+.toolkit-bar h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* App Icon layout */
+.toolkit-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.tool-box {
+  width: 80px;
+  height: 80px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.tool-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* Home page section / similar to second nave layout to "choose their own Journey" */
+.journey-section {
+  margin-bottom: 80px;
+}
+
+.journey-panel {
+  background: #A46D2F;
+  padding: 60px 50px 80px 50px;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.journey-title {
+  color: white;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 60px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.bold-word {
+  font-weight: 700;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.journey-item {
+  text-align: center;
+}
+
+.journey-item a {
+  text-decoration: none;
+}
+
+.journey-item img {
+  width: 100%;
+  max-width: 180px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.journey-item p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Pixelify Sans", sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.journey-item a:hover p {
+  color: #0814C9;
+  transform: scale(1.05);
+}
+
+
+/* Buisness card image for contact info that goes on the bottom of each page */
+.Business_Card2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* This is in the Digital section and all the css code for making the checkered board layout */
+.gallery-section {
+  margin-bottom: 80px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.gallery-section.right .section-content {
+  flex-direction: row;
+}
+
+.gallery-section.left .section-content {
+  flex-direction: row;
+}
+
+.art-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 560px;
+  background: black;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.art-grid1 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.text-box {
+  width: 420px;
+  color: white;
+}
+
+.text-box h2 {
+  color: white;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+/* LEFT sections = images left, text right This is for Digital*/
+.gallery-section.left .art-grid1 {
+  order: 1;
+}
+
+.gallery-section.left .text-box {
+  order: 2;
+  text-align: left;
+}
+
+/* RIGHT sections = text left, images right This is for "Digital" */
+.gallery-section.right .text-box {
+  order: 1;
+  text-align: left;
+}
+
+.gallery-section.right .art-grid1 {
+  order: 2;
+}
+
+/* The Analogue css section */
+/* Adding Perspective Drawings */
+.analogue-section {
+  margin: 80px 0;
+}
+
+.analogue-container {
+  background: #D48B33;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.analogue-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center; 
+}
+
+/* Perspective Images*/
+.analogue-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* text*/
+.analogue-text h3 {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+
+.analogue-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Nude drawings / 3-column section */
+.analogue-nude-drawings {
+  margin: 80px 0;
+}
+
+.analogue-nude-container {
+  background: #D48B33;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.analogue-nude-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.nude-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.nude-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: black;
+}
+
+.nude-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+/* Video styling */
+.video-box {
+  width: 100%;
+  height: 400px;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+/* Required email link */
+.email-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  color: #0814C9;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: yellow;
+}
 
