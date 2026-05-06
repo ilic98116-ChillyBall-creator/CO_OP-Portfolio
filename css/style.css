@@ -12,12 +12,17 @@ h1, h2, h3, nav {
 /* Page Requirement */
 .page {
   width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* navigation bar design; add pixel design and animation later*/
 nav {
   background: #0814C9;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
 }
 
 nav a {
@@ -28,7 +33,6 @@ nav a {
   text-transform: uppercase;
 
   color: white;
-  margin-right: 150px;
   text-decoration: none;
 }
 
@@ -67,7 +71,7 @@ p {
   font-family: Arial, sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: #eaeaea;
+  color: black;
   margin: 0 0 15px 0;
 }
 
@@ -169,21 +173,21 @@ p {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: white;
+  color: #0814C9;
 }
 
 .about-text p {
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  color: #f2f2f2;
+  color: black;
 }
 
 /* Home Page second page with tool kit under the jumpscare profile pic */
 .toolkit-bar {
-  background: #A46D2F;
+  background: #0814C9;
   padding: 30px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .toolkit-bar h3 {
@@ -208,7 +212,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
 }
 
 .tool-box img {
@@ -223,10 +226,10 @@ p {
 }
 
 .journey-panel {
-  background: #A46D2F;
+  background: #0814C9;
   padding: 60px 50px 80px 50px;
   box-sizing: border-box;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .journey-title {
@@ -281,20 +284,49 @@ p {
 }
 
 .journey-item a:hover p {
-  color: #0814C9;
+  color: black;
   transform: scale(1.05);
 }
 
-
-/* Buisness card image for contact info that goes on the bottom of each page */
-.Business_Card2 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
+/* Contact info on Home Page */
+.contact-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 30px;
+  margin: 60px 0;
+  text-align: center;
 }
 
+.contact-section h2 {
+  color: #0814C9;
+  margin-bottom: 30px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  font-size: 18px;
+}
+
+.contact-item span {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #0814C9;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
 /* This is in the Digital section and all the css code for making the checkered board layout */
 .gallery-section {
   margin-bottom: 80px;
@@ -488,6 +520,7 @@ a:hover {
 a:active {
   color: yellow;
 }
+
 
 
 
