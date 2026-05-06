@@ -100,22 +100,6 @@ p {
   max-width: 700px;
 }
 
-/* Buisness card image / hero image goes at the top of every page for now  - REFRENCE
-.Business_Card1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 60px;
-}
-
-.Business_Card1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 60px;
-  animation: heroFadeUp 0.8s ease;
-} */
-
 /* This is where I used chat gpt to teach me how to do an animation; for user experiance I wanted the viewer to know they'er on a different page when they click the nav bar so instead of importing 5 different hero cards I simply added the animation using chat-gpt */
 @keyframes heroFadeUp {
   from {
@@ -194,6 +178,7 @@ p {
   color: white;
   margin-bottom: 20px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 /* App Icon layout */
@@ -208,7 +193,7 @@ p {
 .tool-box {
   width: 80px;
   height: 80px;
-  background: white;
+  background: #0814C9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +203,7 @@ p {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 /* Home page section / similar to second nave layout to "choose their own Journey" */
