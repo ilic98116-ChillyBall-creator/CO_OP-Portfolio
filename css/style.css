@@ -126,7 +126,7 @@ p {
 /* This is where the use of chat-gpt ends */
 
 /* Home page  */
-.portfolio_pic img {
+.COOP_Profile_Pic img {
   width: 70%;
   height: auto;
   display: block;
@@ -488,6 +488,8 @@ a:hover {
 a:active {
   color: yellow;
 }
+
+
 
 
 
