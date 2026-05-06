@@ -71,6 +71,31 @@ p {
   margin: 0 0 15px 0;
 }
 
+.home-hero {
+  background: white;
+  padding: 80px 60px;
+  border-radius: 28px;
+  margin: 40px 0;
+}
+
+.eyebrow {
+  color: #0814C9;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.home-hero h1 {
+  color: #0814C9;
+  font-size: 56px;
+  margin: 10px 0 20px;
+}
+
+.home-hero p {
+  color: #1f1f1f;
+  max-width: 700px;
+}
+
 /* Buisness card image / hero image goes at the top of every page for now */
 .Business_Card1 img {
   width: 100%;
@@ -463,4 +488,5 @@ a:hover {
 a:active {
   color: yellow;
 }
+
 
