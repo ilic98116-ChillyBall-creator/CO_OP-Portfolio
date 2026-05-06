@@ -1,14 +1,17 @@
 body {
   margin: 0;
-  background: black;
+  background: #F6F4E9;
   font-family: Arial, sans-serif;
-  color: white;
+  color: #1f1f1f;
+}
+
+h1, h2, h3, nav {
+  font-family: "Pixelify Sans", monospace;
 }
 
 /* Page Requirement */
 .page {
   width: 1200px;
-  margin: 0 auto;
 }
 
 /* navigation bar design; add pixel design and animation later*/
