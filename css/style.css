@@ -338,7 +338,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   width: 560px;
-  background: black;
+  background: white;
   padding: 20px;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -353,18 +353,18 @@ p {
 
 .text-box {
   width: 420px;
-  color: white;
+  color: black;
 }
 
 .text-box h2 {
-  color: white;
+  color: #0814C9;
 }
 
 .text-box p {
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: #eaeaea;
+  color: black;
 }
 
 /* LEFT sections = images left, text right This is for Digital*/
@@ -506,7 +506,4 @@ a:hover {
 a:active {
   color: yellow;
 }
-
-
-
 
