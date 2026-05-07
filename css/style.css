@@ -13,7 +13,7 @@ h1, h2, h3, nav {
 .page {
   width: 1200px;
   width: 90%;
-  margin: 0 auto;
+margin: 0 auto;
 }
 
 /* navigation bar design; add pixel design and animation later*/
@@ -225,7 +225,7 @@ p {
   font-weight: 600;
   line-height: 1.1;
   margin: 0 0 60px 0;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 
@@ -236,7 +236,7 @@ p {
 .journey-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 10px;
   align-items: start;
 }
 
@@ -249,13 +249,13 @@ p {
 }
 
 .journey-item img {
-  width: 100%;
+  width: 90%;
   max-width: 180px;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .journey-item p {
@@ -263,7 +263,7 @@ p {
   font-size: 20px;
   font-weight: 500;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   font-family: "Pixelify Sans", sans-serif;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -272,6 +272,10 @@ p {
 .journey-item a:hover p {
   color: black;
   transform: scale(1.05);
+}
+
+.journey-item a:hover img {
+  transform: scale(1.10);
 }
 
 /* Contact info on Home Page */
@@ -285,7 +289,7 @@ p {
 
 .contact-section h2 {
   color: #0814C9;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .contact-grid {
@@ -297,22 +301,25 @@ p {
 
 .contact-item {
   font-size: 18px;
+  text-align: center;        
+  display: block;            
+  flex-direction: column;
+  align-items: center;       
 }
 
 .contact-item span {
   display: block;
   font-size: 28px;
   margin-bottom: 10px;
+  align-items: center;  
 }
 
 .contact-item a {
   color: #0814C9;
-  text-decoration: none;
+  
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
-}
+
 /* This is in the Digital section and all the css code for making the checkered board layout */
 .gallery-section {
   margin-bottom: 80px;
@@ -492,7 +499,7 @@ p {
 }
 
 a:link {
-  color: white;
+  color: darkgrey;
 }
 
 a:visited {
@@ -504,7 +511,7 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: #0814C9;
 }
 
 
