@@ -1,529 +1,248 @@
-body {
-  margin: 0;
-  background: #F6F4E9;
-  font-family: Arial, sans-serif;
-  color: #1f1f1f;
-}
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Katarina Ilic Portfolio</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700;800&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">  
+</head>
 
-h1, h2, h3, nav {
-  font-family: "Pixelify Sans", monospace;
-}
+<body>
+<div class="page">
+<nav>
+<a href="index.html">Home</a>
+<a href="digital.html">LifeGuard</a>
+<a href="analogue.html">Nightlife</a>
+<a href="ai.html">RageRoom</a>
+<a href="film.html">Hallucination</a>  
+</nav>
 
-/* Page Requirement */
-.page {
-  width: 1200px;
-  width: 90%;
-margin: 0 auto;
-}
+<section class="Business_Card1">
+<img src="Images/LifeGuard41.jpeg" alt="Hero statement with business card">
+</section>  
+    
+<section class="analogue-section">
+<div class="analogue-container">
+<div class="analogue-grid">
 
-/* navigation bar design; add pixel design and animation later*/
-nav {
-  background: #0814C9;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-}
+<!-- Top Left Image -->
+<div class="analogue-item">
+<img src="Images/figma.1.jpeg" alt="Insightful Interviews">
+</div> 
 
-nav a {
-  font-family: "Pixelify Sans", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+<!-- Top Right Text -->
+<div class="analogue-text top-text">
+<h1>Insightful <br> Interviews</h1>
+<p> My outdoor perspective was influence by one of my adored childhood films "Alice in Wonderland". The tales where psychedelic imagination becomes a childs playground full of twisted beings and environments that might cause a child to fright or freeze. In my world the crops can talk, the pumpkins can play, and the weather can start snowing with sugar cube residue falling from the sky. Perhaps the dream is from a foodie, or maybe they despise vegetables but in world as uncertain a "Tea Timeville"the world is scrambled with unsolved mysteries. the drawing istelf was a challenge as curved objects like msuhrooms and teapots are moreso avoided in perspective, more complexity and time to imagine their phsyical atmosphere. Nevertheless, in a world such as Tea Timeville the world can be as unproportional and dysfigured as much as it likes. It's when perfection kills the ignorance and becomes an inescapable reality.  
+</p>
+</div>
 
-  color: #0814C9;
-  text-decoration: none;
-}
+<!-- Bottom Left Text -->
+<div class="analogue-text bottom-text">
+<h1> Iteration <br> Grouping </h1>
+<p> In my indoor perspective I applied a silly twist as not often you see cartoons or storyboards at the morgues, usually people find them unsettling but in one of my ideas of short-films I wanted to reveal a small morgue character that doesn't neccessarily understand the concept of death as he is...wide awake and full of curiousity around such a delicate facility. His name is Tim, Tim as you can imagine in this scene is about to scare one of the poor older fellas that have been employed at the morgue for years, perfecting his craft t'ill he sees what science taught him to be the imaginable throughout his entire carrer, a second chance at life. Creating this enviornment took just as much time as the intricate details of medical tooks and storage cabins for all the personnas that lurk on the sidelines deserved just as much attention as the main plot. If I had the oppourtunity to make film I would let all the background characters have a story of their own to tell even in the after life.</p> 
+</div>
 
-h1, h2, h3 {
-  font-family: "Pixelify Sans", sans-serif;
-  line-height: 1.1;
-}
-
-h1 {
-  margin: 30px 0;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #0814C9;
-}
-
-h2 {
-  margin: 0 0 15px 0;
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #0814C9;
-}
-
-h3 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #0814C9;
-}
-
-p {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: black;
-  margin: 0 0 15px 0;
-}
-
-.home-hero {
-  background: white;
-  padding: 80px 60px;
-  border-radius: 28px;
-  margin: 40px 0;
-}
-
-.eyebrow {
-  color: #0814C9;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.home-hero h1 {
-  color: #0814C9;
-  font-size: 56px;
-  margin: 10px 0 20px;
-}
-
-.home-hero p {
-  color: #1f1f1f;
-  max-width: 700px;
-}
-
-/* This is where I used chat gpt to teach me how to do an animation; for user experiance I wanted the viewer to know they'er on a different page when they click the nav bar so instead of importing 5 different hero cards I simply added the animation using chat-gpt */
-@keyframes heroFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* This is where the use of chat-gpt ends */
-
-/* Home page  */
-.COOP_Profile_Pic img {
-  width: 70%;
-  height: auto;
-  display: block;
-}
-
-.about-section {
-  margin-bottom: 80px;
-}
-
-.about-card {
-  background: white;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.about-top {
-  display: flex;
-  align-items: center;
-}
-
-.about-image {
-  width: 58%;
-}
-
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about-text {
-  width: 42%;
-  padding: 60px 40px 30px 40px;
-  box-sizing: border-box;
-  color: white;
-}
-
-.about-text h2 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #0814C9;
-}
-
-.about-text p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 0;
-  color: black;
-}
-
-/* Home Page second page with tool kit under the jumpscare profile pic */
-.toolkit-bar {
-  background: #0814C9;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.toolkit-bar h3 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 20px;
-  border-radius: 10px;
-}
-
-/* App Icon layout */
-.toolkit-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 70px;
-}
-
-.tool-box {
-  width: 80px;
-  height: 80px;
-  background: #0814C9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tool-box img {
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-/* Home page section / similar to second nave layout to "choose their own Journey" */
-.journey-section {
-  margin-bottom: 80px;
-}
-
-.journey-panel {
-  background: #0814C9;
-  padding: 60px 50px 80px 50px;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.journey-title {
-  color: white;
-  text-align: center;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 1.1;
-  margin: 0 0 60px 0;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.bold-word {
-  font-weight: 700;
-}
-
-.journey-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: start;
-}
-
-.journey-item {
-  text-align: center;
-}
-
-.journey-item a {
-  text-decoration: none;
-}
-
-.journey-item img {
-  width: 90%;
-  max-width: 180px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 20px;
-}
-
-.journey-item p {
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  font-family: "Pixelify Sans", sans-serif;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.journey-item a:hover p {
-  color: black;
-  transform: scale(1.05);
-}
-
-.journey-item a:hover img {
-  transform: scale(1.10);
-}
-
-/* Contact info on Home Page */
-.contact-section {
-  background: white;
-  padding: 60px 40px;
-  border-radius: 30px;
-  margin: 60px 0;
-  text-align: center;
-}
-
-.contact-section h2 {
-  color: #0814C9;
-  margin-bottom: 40px;
-}
-
-.contact-grid {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.contact-item {
-  font-size: 18px;
-  text-align: center;        
-  display: block;            
-  flex-direction: column;
-  align-items: center;       
-}
-
-.contact-item span {
-  display: block;
-  font-size: 28px;
-  margin-bottom: 10px;
-  align-items: center;  
-}
-
-.contact-item a {
-  color: #0814C9;
+<!-- Bottom Right Image -->
+<div class="analogue-item">
+<img src="Images/figma.3.jpeg" alt="Iteration Grouping">
+</div>
+  </div>
+    </div>
+     </section> 
   
-}
+  
+<!-- The 3 Nude Drawings -->
+<section class="analogue-nude-drawings">
+<div class="analogue-nude-container">
+<div class="analogue-nude-grid">
+  
+<div class="nude-item">
+<img src="Images/Figma4.jpeg" alt="Storyboard">
+<h3> Quick Time Anatomy 60 seconds </h3>
+<p>This drawing focused on quick gesture and proportion through timed observation.</p>
+</div>
 
+<div class="nude-item">
+<img src="Images/Figma5.jpeg" alt="Iterating Prioritization">
+<h3> Quick Time Anatomy 30 seconds </h3>
+<p>This study explored motion and balance using fast sketching techniques.</p>
+</div>
 
-/* This is in the Digital section and all the css code for making the checkered board layout */
-.Business_Card1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+<div class="nude-item">
+<img src="Images/Figma6.jpeg" alt="Prioritization Matrix">
+<h3> Quick Time Anatomy 60 seconds </h3>
+<p>This sketch emphasized line confidence, structure, and expressive form.</p>
+</div>
+ </div>
+  </div>
+</section>
 
-.gallery-section {
-  margin-bottom: 80px;
-}
+<!-- The 3 Personnas -->
+<section class="analogue-nude-drawings">
+<div class="analogue-nude-container">
+<div class="analogue-nude-grid">
+  
+<div class="nude-item">
+<img src="Images/Figma9.2.jpeg" alt="Storyboard">
+<h3> Quick Time Anatomy 60 seconds </h3>
+<p>This drawing focused on quick gesture and proportion through timed observation.</p>
+</div>
 
-.section-content {
- display: flex;
- align-items: center;   
- gap: 80px;                
-}
+<div class="nude-item">
+<img src="Images/Figma9.jpeg" alt="Iterating Prioritization">
+<h3> Quick Time Anatomy 30 seconds </h3>
+<p>This study explored motion and balance using fast sketching techniques.</p>
+</div>
 
-.gallery-section.right .section-content {
-  flex-direction: row;
-}
+<div class="nude-item">
+<img src="Images/Figma9.3.jpeg" alt="Prioritization Matrix">
+<h3> Quick Time Anatomy 60 seconds </h3>
+<p>This sketch emphasized line confidence, structure, and expressive form.</p>
+</div>
+ </div>
+  </div>
+</section>
 
-.gallery-section.left .section-content {
-  flex-direction: row;
-}
+  
+  
+<section class="analogue-section">
+<div class="analogue-container">
+<div class="analogue-grid">
 
+<!-- Top Left Image -->
+<div class="analogue-item">
+<img src="Images/Figma10.jpeg" alt="Bubble">
+</div> 
 
-.art-grid1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 560px;
-  background: white;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  border-radius: 12px;
-}
+<!-- Top Right Text -->
+<div class="analogue-text top-text">
+<h1> Bubble Painting </h1>
+<p> My bubble painting originated back in highschool. I still value this petite 2X2 inch peice because it was the beginning of my journey of finding myself through self expression painting. As you can tell i'm not a huge fan of realism, I much prefer abstract surrealism because theres a deeper story told than just what meets the eye and metaphors can be more creative. One of my main influencers were <a href="https://en.wikipedia.org/wiki/Marc_Chagall" target="Marc_Chagall"> Marc Chagall </a>; a jewish painter that prioritized expressionism in his art. For me this bubble was a symbol of my narrowmindedness thinking I had limited freedom due to circumstances in my homelife. For example, having take-out for lunch felt rebellious and having close friends had to be a secret kept from parental ears. These restrictions made me feel like the simple freedoms were nearly unreachable. But in reality it was simply a mindset, beyond the darkness there are clouds, dreams, oppourtunities to be discovered. It's a painting I often come back to more and more as I develop myself as an adualt trying my best to drift myself away from the restricted child with no personal opinions to an artist who can express to the whole world in confidence who she is. 
+</p>
+</div>
 
-.art-grid1 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
+<!-- Bottom Left Text -->
+<div class="analogue-text bottom-text">
+<h1> The  Cheesecake </h1>
+<p> The cheese was a sculpture I made in high school that carried more meaning than my simple dislike for its taste. It became a way to process what birthdays felt like growing up. They were never really about celebrating me, but instead centered around my dad—what he wanted to eat, where he wanted to go, and how he wanted the day to unfold. <br>
 
-.text-box {
-  max-width: 500px;
-  color: black;
-}
+I remember wanting small things, like seeing my friends or choosing a cake I actually liked, but even those choices didn’t feel like mine. There were years spent going on trips I didn’t ask for, eating flavors I didn’t enjoy, and receiving gifts that felt disconnected from who I was. Over time, those moments built into something larger—where expressing what I liked or cared about didn’t feel safe to share. <br>
 
-.text-box h2 {
-  color: #0814C9;
-}
+<br> Because of that, I learned to keep parts of myself private. The sculpture reflects that shift. The knife cutting off the tongue, placed beside a candle, represents another year of silence—being present, but not truly heard.
+<!-- Used chat to re-write my text without trauma dumping my audiance -->
+  </p> 
+</div>
 
-.text-box h3 {
-  color: #0814C9 !important;
-}
+<!-- Bottom Right Image -->
+<div class="analogue-item">
+<img src="Images/Figma11.jpeg" alt=" My first Sculpture, Cheesecake">
+</div>
+  </div>
+    </div>
+     </section> 
 
-.text-box p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-}
+    
+<section class="analogue-section">
+<div class="analogue-container">
+<div class="analogue-grid">
 
-/* LEFT sections = images left, text right This is for Digital*/
-.gallery-section.left .art-grid1 {
-  order: 1;
-}
+<!-- Top Left Image -->
+<div class="analogue-item">
+<img src="Images/Figma12.jpeg" alt=" My first Storyboard Animation ">
+</div> 
 
-.gallery-section.left .text-box {
-  order: 2;
-  text-align: left;
-}
+<!-- Top Right Text -->
+<div class="analogue-text top-text">
+<h1> My First StoryBoard </h1>
+<p> My first story board was when I discovered how complicated it was to describe a direct beggining, middle and end without words. In the requirements for applying to Sheridan College they provide a character of a fox and ask you to make a story out him with 4 pannels; an introduction, the problem, the solution, and conclusion. But the trick to this was the story had to be fluent enouph to the viewer that they can intrepet the story without words. Therefore, I started a simple scenario of the fix liking a penguin since Valentine's was coming up and it was a simple way to also demonstrate use of foreground, middle ground and background to the story. He starts off with a bouquet, gets nervous when seeing a crowd will also be witnessing his attempt to ask the penguin out, maybe also worried to get a laugh or two if rejected. As he walks up the penguin, the climax becomes the shock of the crowd and the conclusion was a happy ending. This was a lot harder than it looks because it took time to come up with the story line, characters and postioning of where the angle of the camera /viwer sees the story unravelling. 
+</p>
+</div>
 
-/* RIGHT sections = text left, images right This is for "Digital" */
-.gallery-section.right .text-box {
-  order: 1;
-  text-align: left;
-}
+<!-- Bottom Left Text -->
+<div class="analogue-text bottom-text">
+<h1> Hand Drawn Animation </h1>
+<p> The walkie talkie was one of the most challenging tasks i've ever done in my hsitory of projects. This was an application for Sheriden College Animation and they offered the options of digital or hand drawn. I decided to go for hand drawn to text my own ability in understanding flow and character. I started off giving the little guy a story to his ridged personna; I used his attena to show expressions and physical postures of sadness, defeat and giving up till he trips and stumbles upon his own attena and lands with grace displaying how theres a start and end to all aspects of life including the sad side. This project required 30-40 frames of pages stacked on top of each paper and one by one I would do about 6 frames per day landing out the actions, measurements and sketching this expressive little fella. Unfortunatly, I wasn't accepted into Sheridan College with this animation but I was still proud of myself carried my skills forward in GBDA applying narrative design in all my work i've come across to the best of my abilities. 
+  </p> 
+</div>
 
-.gallery-section.right .art-grid1 {
-  order: 2;
-}
+<!-- Bottom Right Image -->
+<div class="analogue-item">
+<img src="Images/Figma13.jpeg" alt=" My First Hand drawn Stop Motion Animation ">
+</div>
+  </div>
+    </div>
+     </section> 
 
-/* The Analogue css section */
-/* Adding Perspective Drawings */
-.analogue-section {
-  margin: 30px 0;
-}
+<section class="analogue-section">
+<div class="analogue-container">
+<div class="analogue-grid">
 
-.analogue-container {
-  background: #F6F4E9;
-  padding: 40px;
-  border-radius: 40px;
-}
+<!-- Top Left Image -->
+<div class="analogue-item">
+<img src="Images/Figma14.jpeg" alt=" My first Storyboard Animation ">
+</div> 
 
-.analogue-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center; 
-}
+<!-- Top Right Text -->
+<div class="analogue-text top-text">
+<h1> My First StoryBoard </h1>
+<p> My first story board was when I discovered how complicated it was to describe a direct beggining, middle and end without words. In the requirements for applying to Sheridan College they provide a character of a fox and ask you to make a story out him with 4 pannels; an introduction, the problem, the solution, and conclusion. But the trick to this was the story had to be fluent enouph to the viewer that they can intrepet the story without words. Therefore, I started a simple scenario of the fix liking a penguin since Valentine's was coming up and it was a simple way to also demonstrate use of foreground, middle ground and background to the story. He starts off with a bouquet, gets nervous when seeing a crowd will also be witnessing his attempt to ask the penguin out, maybe also worried to get a laugh or two if rejected. As he walks up the penguin, the climax becomes the shock of the crowd and the conclusion was a happy ending. This was a lot harder than it looks because it took time to come up with the story line, characters and postioning of where the angle of the camera /viwer sees the story unravelling. 
+</p>
+</div>
 
-/* Perspective Images*/
-.analogue-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
+<!-- Bottom Left Text -->
+<div class="analogue-text bottom-text">
+<h1> Hand Drawn Animation </h1>
+<p> The walkie talkie was one of the most challenging tasks i've ever done in my hsitory of projects. This was an application for Sheriden College Animation and they offered the options of digital or hand drawn. I decided to go for hand drawn to text my own ability in understanding flow and character. I started off giving the little guy a story to his ridged personna; I used his attena to show expressions and physical postures of sadness, defeat and giving up till he trips and stumbles upon his own attena and lands with grace displaying how theres a start and end to all aspects of life including the sad side. This project required 30-40 frames of pages stacked on top of each paper and one by one I would do about 6 frames per day landing out the actions, measurements and sketching this expressive little fella. Unfortunatly, I wasn't accepted into Sheridan College with this animation but I was still proud of myself carried my skills forward in GBDA applying narrative design in all my work i've come across to the best of my abilities. 
+  </p> 
+</div>
 
-/* text*/
-.analogue-text h3 {
-  font-size: 24px;
-  color: #0814C9;;
-  margin: 0;
-}
+<!-- Bottom Right Image -->
+<div class="analogue-item">
+<img src="Images/Figma16.jpeg" alt=" My First Hand drawn Stop Motion Animation ">
+</div>
+  </div>
+    </div>
+     </section>   
 
-.analogue-text p {
-  margin-top: 30px;
-  font-size: 14px;
-  color: black;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
+<section class="analogue-section">
+<div class="analogue-container">
+<div class="analogue-grid">
 
-/* Nude drawings / 3-column section */
-.analogue-nude-drawings {
-  margin: 80px 0;
-}
+<!-- Top Left Image -->
+<div class="analogue-item">
+<img src="Images/Figma Portolfio-20.jpeg" alt=" My first Storyboard Animation ">
+</div> 
 
-.analogue-nude-container {
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-}
+<!-- Top Right Text -->
+<div class="analogue-text top-text">
+<h1> My First StoryBoard </h1>
+<p> My first story board was when I discovered how complicated it was to describe a direct beggining, middle and end without words. In the requirements for applying to Sheridan College they provide a character of a fox and ask you to make a story out him with 4 pannels; an introduction, the problem, the solution, and conclusion. But the trick to this was the story had to be fluent enouph to the viewer that they can intrepet the story without words. Therefore, I started a simple scenario of the fix liking a penguin since Valentine's was coming up and it was a simple way to also demonstrate use of foreground, middle ground and background to the story. He starts off with a bouquet, gets nervous when seeing a crowd will also be witnessing his attempt to ask the penguin out, maybe also worried to get a laugh or two if rejected. As he walks up the penguin, the climax becomes the shock of the crowd and the conclusion was a happy ending. This was a lot harder than it looks because it took time to come up with the story line, characters and postioning of where the angle of the camera /viwer sees the story unravelling. 
+</p>
+</div>
 
-.analogue-nude-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: start;
-}
+<!-- Bottom Left Text -->
+<div class="analogue-text bottom-text">
+<h1> Hand Drawn Animation </h1>
+<p> The walkie talkie was one of the most challenging tasks i've ever done in my hsitory of projects. This was an application for Sheriden College Animation and they offered the options of digital or hand drawn. I decided to go for hand drawn to text my own ability in understanding flow and character. I started off giving the little guy a story to his ridged personna; I used his attena to show expressions and physical postures of sadness, defeat and giving up till he trips and stumbles upon his own attena and lands with grace displaying how theres a start and end to all aspects of life including the sad side. This project required 30-40 frames of pages stacked on top of each paper and one by one I would do about 6 frames per day landing out the actions, measurements and sketching this expressive little fella. Unfortunatly, I wasn't accepted into Sheridan College with this animation but I was still proud of myself carried my skills forward in GBDA applying narrative design in all my work i've come across to the best of my abilities. 
+  </p> 
+</div>
 
-.nude-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.nude-item h3 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  color: #0814C9;
-  letter-spacing: 3;
-}
-
-.nude-item p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  color: black;
-}
-
-/* Video styling */
-.video-box {
-  width: 100%;
-  height: 400px;
-}
-
-.video-box iframe {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: none;
-}
-
-/* Required email link */
-.email-link {
-  color: white;
-  text-decoration: underline;
-}
-
-.email-link:hover {
-  color: #0814C9;
-}
-
-a:link {
-  color: darkgrey;
-}
-
-a:visited {
-  color: lightgray;
-}
-
-a:hover {
-  color: black;
-}
-
-a:active {
-  color: #0814C9;
-}
+<!-- Bottom Right Image -->
+<div class="analogue-item">
+<img src="Images/Figma Portolfio-21.jpeg" alt=" My First Hand drawn Stop Motion Animation ">
+</div>
+  </div>
+    </div>
+     </section>   
+  
+  <footer class="Business_Card2">
+      <img src="images/digital/Business_Card2.png" alt="Brand footer business card">
+    </footer>
+  </div>
+</body>
+</html>
