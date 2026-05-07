@@ -321,15 +321,20 @@ p {
 
 
 /* This is in the Digital section and all the css code for making the checkered board layout */
+.Business_Card1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .gallery-section {
   margin-bottom: 80px;
 }
 
 .section-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+ display: flex;
+ align-items: center;   
+ gap: 80px;                
 }
 
 .gallery-section.right .section-content {
@@ -340,6 +345,7 @@ p {
   flex-direction: row;
 }
 
+
 .art-grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -349,17 +355,19 @@ p {
   padding: 20px;
   box-sizing: border-box;
   flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 12px;
 }
 
 .art-grid1 img {
   width: 100%;
-  height: 180px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
 
 .text-box {
-  width: 420px;
+  max-width: 500px;
   color: black;
 }
 
