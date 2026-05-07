@@ -13,7 +13,7 @@ h1, h2, h3, nav {
 .page {
   width: 1200px;
   width: 90%;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* navigation bar design; add pixel design and animation later*/
