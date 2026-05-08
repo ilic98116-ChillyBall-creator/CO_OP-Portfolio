@@ -303,21 +303,21 @@ p {
 .contact-item {
   font-size: 18px;
   text-align: center;        
-  display: block;            
+  display: flex;            
   flex-direction: column;
   align-items: center;       
 }
 
-.contact-item span {
-  display: block;
-  font-size: 28px;
+.contact-icon {
+  width: 70px;        
+  height: 70px;
+  object-fit: contain;
   margin-bottom: 10px;
-  align-items: center;  
 }
 
 .contact-item a {
   color: #0814C9;
-  
+  letter-spacing: 2;
 }
 
 
@@ -329,12 +329,14 @@ p {
 }
 
 .gallery-section {
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 
 .section-content {
  display: flex;
- align-items: center;   
+ align-items: center; 
+ justify-content: center; 
  gap: 80px;                
 }
 
@@ -366,6 +368,28 @@ p {
   object-fit: cover;
   display: block;
 }
+
+/* Seperate Art Grid for single photos */
+.art-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 560px;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+.art-grid2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 
 .text-box {
   max-width: 500px;
@@ -513,11 +537,11 @@ p {
 }
 
 a:link {
-  color: darkgrey;
+  color: black;
 }
 
 a:visited {
-  color: lightgray;
+  color: white;
 }
 
 a:hover {
@@ -527,6 +551,8 @@ a:hover {
 a:active {
   color: #0814C9;
 }
+
+
 
 
 
