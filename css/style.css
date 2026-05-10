@@ -70,7 +70,7 @@ h3 {
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
   color: black;
   margin: 0 0 15px 0;
@@ -481,7 +481,7 @@ p {
 
 .analogue-text p {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 17px;
   color: black;
   line-height: 1.5;
   margin-bottom: 0;
@@ -527,7 +527,7 @@ p {
 
 .nude-item p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: black;
 }
@@ -675,7 +675,6 @@ a:active {
   background: #0814C9;
   color: white;
 }
-
 
 
 
