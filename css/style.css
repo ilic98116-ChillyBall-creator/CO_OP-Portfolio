@@ -676,5 +676,12 @@ a:active {
   color: white;
 }
 
+.footer-credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px; /* optional */
+}
+
+
 
 
